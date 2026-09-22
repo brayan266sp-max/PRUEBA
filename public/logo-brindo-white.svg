@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <!-- BRINDO single-line smiley + handshake icon in White -->
+  <g stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Upper head circle arc -->
+    <path d="M 46 112 C 46 54 80 32 120 32 C 160 32 194 54 194 112" />
+    
+    <!-- Smiling Eyes (friendly curved arcs) -->
+    <path d="M 86 78 C 91 71 100 71 105 78" stroke-width="7" />
+    <path d="M 135 78 C 140 71 149 71 154 78" stroke-width="7" />
+    
+    <!-- Cheerful Smile -->
+    <path d="M 97 100 C 108 116 132 116 143 100" stroke-width="7" />
+    
+    <!-- Handshake structure -->
+    <path d="M 38 116 C 60 120 78 116 94 122" />
+    <path d="M 202 116 C 180 120 162 116 146 122" />
+    <path d="M 94 122 C 108 112 120 102 136 114 C 148 124 138 138 122 146 L 108 152" />
+    <path d="M 124 118 C 114 128 104 136 88 144" />
+    <path d="M 78 146 C 72 154 80 166 90 160 C 96 168 106 172 114 164 C 122 172 134 168 140 158 C 146 164 158 158 162 148" />
+    <path d="M 38 146 L 68 156" />
+    <path d="M 202 146 L 172 156" />
+  </g>
+  
+  <text x="120" y="218" text-anchor="middle" fill="#FFFFFF" font-family="'Sora', 'IBM Plex Sans', sans-serif" font-weight="800" font-size="34" letter-spacing="4">BRINDO</text>
+</svg>

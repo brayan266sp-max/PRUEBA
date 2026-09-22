@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-title: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-primary: #408340;
+  --color-brand-secondary: #2F6F35;
+  --color-brand-accent: #70AD70;
+  --color-brand-bg: #FFFFFF;
+
+  --color-light-bg: #FFFFFF;
+  --color-light-canvas: #F8FAFC;
+  --color-light-surface: #F1F5F9;
+  --color-light-border: #E2E8F0;
+  --color-light-border-subtle: #EDF2F7;
+  --color-light-text: #0F172A;
+  --color-light-muted: #64748B;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #0F172A;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  letter-spacing: -0.025em;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* GitHub-style Subtle Grid Pattern for White Background */
+.bg-gh-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(64, 131, 64, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(64, 131, 64, 0.06) 1px, transparent 1px);
+}
+
+/* Brand Glow radial effects for Light Theme */
+.glow-emerald {
+  background: radial-gradient(circle, rgba(112, 173, 112, 0.18) 0%, rgba(64, 131, 64, 0.06) 50%, transparent 70%);
+}
+
+.glow-ambient {
+  background: radial-gradient(circle, rgba(64, 131, 64, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* Pause animation on hover */
+.pause-on-hover:hover {
+  animation-play-state: paused !important;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 30s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Custom subtle scrollbar for light mode */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "BRINDO",
+  "description": "Plataforma digital colombiana que conecta MiPymes con talento profesional verificado para contratar servicios de manera rápida, segura y transparente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
